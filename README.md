@@ -2,7 +2,6 @@
 
 **Gelados Pop** é um site responsivo e visualmente vibrante de uma sorveteria fictícia. Totalmente desenvolvido com **HTML, CSS e JavaScript puros**, seu foco está na **experiência visual**, **responsividade** e um **design autoral**, cuidadosamente planejado por mim para transmitir leveza, diversão e profissionalismo.
 
-![Banner do Gelados Pop](link-da-imagem-ou-gif-aqui)
 
 ---
 
