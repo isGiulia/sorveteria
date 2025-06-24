@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="20">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+    <!--^ Links para folhas de estilo globais -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/scroll.css">
+     <!--^ Links para folhas de estilo não globais -->
+    <link rel="stylesheet" href="css/sobre.css">
+     <!-- ^Ícone da aba do navegador -->
+     <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+    <!-- ^Importação de fontes do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alata&family=Bad+Script&family=Dancing+Script:wght@700&family=Sriracha&display=swap"
+        rel="stylesheet">
+    <script defer src="js/header.js"></script>
+    
+
+</head>
+
+<body>
+    <header>
+        <section class="section-container-forma">
+            <div class="container_forma">
+                <div class="forma"></div> 
+            </div>
+            <section class="navbar-header">
+                <nav id="navegar-mobile">
+                    <ul class="navegar-ul-mobile">
+                        <li><a href="view/sobre.html">Sobre</a></li>
+                        <li><a href="#">Produtos</a></li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Fale Conosco</a></li>
+                       
+                    </ul>
+                </nav>
+               
+            </section>
+            <section class="navegar-container">
+                
+                <nav id="navegar-pc">
+                    <div id="div-nav">
+                        <img id="logo-header" src="imagens/logo.png" alt="logo">
+                    </div>
+                    <ul class="itensMenu1">
+                        <li class="mn-pc"><a href="../index.html">Início</a></li>
+                        <li class="mn-pc"><a href="#">Produtos</a>
+                            <ul id="subUl">
+                                <li class="hover"><a href="#">Linha Vegana</a></li>
+                                <li class="hover"><a href="#">Linha Premium</a></li>
+                                <li class="hover"><a href="#">Palito</a></li>
+                            </ul>
+                        </li>
+                        <li class="mn-pc"><a href="#">Delivery</a></li>
+                        <li class="mn-pc"><a href="#">Fale Conosco</a></li>
+                        <li id="comprar" class="icon_compra">
+                            <a onclick="carrinho()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                    class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+                                    <!-- Ícone de carrinho de compras -->
+                                    <path
+                                        d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5ZM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1Zm0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </section>
+        
+       
+        <div id="listaCompras" class="lista-compras">
+            <div class="cabecalho-carrinho">
+                <h3>Sua sacola</h3>
+                <a  onclick="carrinho()">&times;</a>
+            </div>
+            <div class="conteudo-carrinho">
+                <ul>
+                    <li>
+                        <div class="informacoes-item">
+                            <img src="imagens/Sorvetes/img-P/rsz_creme_caramelo.jpg" alt="Sorvete" class="imagem-item">
+                            <div class="detalhes-item">
+                                <h5 class="nome-item">Sorvete</h5>
+                                <span class="preco-item">$3.99</span>
+                            </div>
+                        </div>
+                        <div class="controle-quantidade">
+                            <button class="botao-quantidade menos">-</button>
+                            <span class="quantidade-item">1</span>
+                            <button class="botao-quantidade mais">+</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="informacoes-item">
+                            <img src="imagens/Sorvetes/img-P/rsz_creme_caramelo.jpg" alt="Sorvete" class="imagem-item">
+                            <div class="detalhes-item">
+                                <h5 class="nome-item">Sorvete</h5>
+                                <span class="preco-item">$3.99</span>
+                            </div>
+                        </div>
+                        <div class="controle-quantidade">
+                            <button class="botao-quantidade menos">-</button>
+                            <span class="quantidade-item">1</span>
+                            <button class="botao-quantidade mais">+</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="informacoes-item">
+                            <img src="imagens/Sorvetes/img-P/rsz_creme_caramelo.jpg" alt="Sorvete" class="imagem-item">
+                            <div class="detalhes-item">
+                                <h5 class="nome-item">Sorvete</h5>
+                                <span class="preco-item">$3.99</span>
+                            </div>
+                        </div>
+                        <div class="controle-quantidade">
+                            <button class="botao-quantidade menos">-</button>
+                            <span class="quantidade-item">1</span>
+                            <button class="botao-quantidade mais">+</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="informacoes-item">
+                            <img src="imagens/Sorvetes/img-P/rsz_creme_caramelo.jpg" alt="Sorvete" class="imagem-item">
+                            <div class="detalhes-item">
+                                <h5 class="nome-item">Sorvete</h5>
+                                <span class="preco-item">$3.99</span>
+                            </div>
+                        </div>
+                        <div class="controle-quantidade">
+                            <button class="botao-quantidade menos">-</button>
+                            <span class="quantidade-item">1</span>
+                            <button class="botao-quantidade mais">+</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="informacoes-item">
+                            <img src="imagens/Sorvetes/img-P/rsz_creme_caramelo.jpg" alt="Sorvete" class="imagem-item">
+                            <div class="detalhes-item">
+                                <h5 class="nome-item">Sorvete</h5>
+                                <span class="preco-item">$3.99</span>
+                            </div>
+                        </div>
+                        <div class="controle-quantidade">
+                            <button class="botao-quantidade menos">-</button>
+                            <span class="quantidade-item">1</span>
+                            <button class="botao-quantidade mais">+</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="informacoes-item">
+                            <img src="imagens/Sorvetes/img-P/rsz_creme_caramelo.jpg" alt="Sorvete" class="imagem-item">
+                            <div class="detalhes-item">
+                                <h5 class="nome-item">Sorvete</h5>
+                                <span class="preco-item">$3.99</span>
+                            </div>
+                        </div>
+                        <div class="controle-quantidade">
+                            <button class="botao-quantidade menos">-</button>
+                            <span class="quantidade-item">1</span>
+                            <button class="botao-quantidade mais">+</button>
+                        </div>
+                    </li>
+                    <!-- Outros itens da lista... -->
+                </ul>
+                <button class="botao-finalizar">Finalizar</button>
+            </div>
+        </div>
+    
+    
+    </header>
+    <!-- Conteúdo da página -->
+    <!-- <div class="container">
+        <div id="container-h1">
+            <h1>Gelados Pop</h1>
+        </div>
+        <main id="section-principal">
+            <section id="section-imgs">
+                <aside class="foto_sobre"><img src="imagens/img001.png" alt=""></aside>
+                <aside class="foto_sobre"><img src="imagens/img002.png" alt=""></aside>
+                <aside class="foto_sobre"><img src="imagens/img003.png" alt=""></aside>
+
+            </section>
+            <section>
+                <div>
+                    <img src="" alt="">
+                    
+
+                </div>
+                <div>
+                    <div>
+                        <img src="imagens/laço.png" alt="Descrição da imagem">
+                        <h2>O começo de tudo...</h2>
+                    </div>
+                    <section>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultricies mi eget mauris pharetra et. Nulla porttitor massa id neque aliquam vestibulum morbi. Justo laoreet sit amet cursus sit amet. Ac tincidunt vitae semper quis lectus nulla at. Turpis cursus in hac habitasse platea dictumst quisque. Cras ornare arcu dui vivamus arcu. Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque. Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Tempus urna et pharetra pharetra massa massa ultricies. Lacus sed viverra tellus in hac habitasse. Tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Vulputate eu scelerisque felis imperdiet proin fermentum leo vel orci. Lacus suspendisse faucibus interdum posuere. Vestibulum sed arcu non odio euismod lacinia at quis risus.
+
+                        </p>
+                    </section>
+
+                   
+                    
+                </div>
+
+            </section>
+        </main>
+
+    </div> -->
+    <!-- footer -->
+    <footer>
+        <div class="final_pag">
+            <p>&copy; 2023 Gelados Pop. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+
+</body>
+
+    
+
+</html>

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+    <!-- ^Meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ^Links js -->
+    <script src="view/js/main.js"></script>
+    <!--^ Links para folhas de estilo globais -->
+    <link rel="stylesheet" href="view/css/style.css">
+    <link rel="stylesheet" href="view/css/header.css">
+    <link rel="stylesheet" href="view/css/scroll.css">
+     <!--^ Links para folhas de estilo não globais -->
+    <link rel="stylesheet" href="view/css/main.css">
+  
+   
+
+    <!-- ^Ícone da aba do navegador -->
+    <link rel="shortcut icon" href="view/imagens/logo.png" type="image/x-icon">
+
+    <!-- ^Importação de fontes do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alata&family=Bad+Script&family=Dancing+Script:wght@700&family=Sriracha&display=swap"
+        rel="stylesheet">
+        <script defer src="view/js/header.js"></script>
+
+    <title>Gelados Pop</title>
+</head>
+
+<body>
+    <header>
+        <section class="section-container-forma">
+            <div class="container_forma">
+                <div class="forma"></div> 
+            </div>
+            <section class="navbar-header">
+                <nav id="navegar-mobile">
+                    <ul class="navegar-ul-mobile">
+                        <li><a href="view/sobre.html">Sobre</a></li>
+                        <li><a href="#">Produtos</a></li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Fale Conosco</a></li>
+                       
+                    </ul>
+                </nav>
+               
+            </section>
+            <section class="navegar-container">
+                
+                <nav id="navegar-pc">
+                    <div id="div-nav">
+                        <img id="logo-header" src="view/imagens/logo.png" alt="logo">
+                    </div>
+                    <ul class="itensMenu1">
+                        <li class="mn-pc"><a href="view/sobre.html">Sobre</a></li>
+                        <li class="mn-pc"><a href="#">Produtos</a>
+                            <ul id="subUl">
+                                <li class="hover"><a href="#">Linha Vegana</a></li>
+                                <li class="hover"><a href="#">Linha Premium</a></li>
+                                <li class="hover"><a href="#">Palito</a></li>
+                            </ul>
+                        </li>
+                        <li class="mn-pc"><a href="#">Delivery</a></li>
+                        <li class="mn-pc"><a href="#">Fale Conosco</a></li>
+                        <li id="comprar" class="icon_compra">
+                            <a onclick="carrinho()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                    class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+                                    <!-- Ícone de carrinho de compras -->
+                                    <path
+                                        d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5ZM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1Zm0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </section>
+        
+       
+        <div id="listaCompras" class="lista-compras">
+            <div class="cabecalho-carrinho">
+                <h3>Sua sacola</h3>
+                <a  onclick="carrinho()">&times;</a>
+            </div>
+            <div class="conteudo-carrinho">
+                <ul>
+                    <li>
+                        <div class="informacoes-item">
+                            <img src="view/imagens/Sorvetes/img-P/rsz_creme_caramelo.jpg" alt="Sorvete" class="imagem-item">
+                            <div class="detalhes-item">
+                                <h5 class="nome-item">Sorvete</h5>
+                                <span class="preco-item">$3.99</span>
+                            </div>
+                        </div>
+                        <div class="controle-quantidade">
+                            <button class="botao-quantidade menos">-</button>
+                            <span class="quantidade-item">1</span>
+                            <button class="botao-quantidade mais">+</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="informacoes-item">
+                            <img src="view/imagens/Sorvetes/img-P/rsz_creme_caramelo.jpg" alt="Sorvete" class="imagem-item">
+                            <div class="detalhes-item">
+                                <h5 class="nome-item">Sorvete</h5>
+                                <span class="preco-item">$3.99</span>
+                            </div>
+                        </div>
+                        <div class="controle-quantidade">
+                            <button class="botao-quantidade menos">-</button>
+                            <span class="quantidade-item">1</span>
+                            <button class="botao-quantidade mais">+</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="informacoes-item">
+                            <img src="view/imagens/Sorvetes/img-P/rsz_creme_caramelo.jpg" alt="Sorvete" class="imagem-item">
+                            <div class="detalhes-item">
+                                <h5 class="nome-item">Sorvete</h5>
+                                <span class="preco-item">$3.99</span>
+                            </div>
+                        </div>
+                        <div class="controle-quantidade">
+                            <button class="botao-quantidade menos">-</button>
+                            <span class="quantidade-item">1</span>
+                            <button class="botao-quantidade mais">+</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="informacoes-item">
+                            <img src="view/imagens/Sorvetes/img-P/rsz_creme_caramelo.jpg" alt="Sorvete" class="imagem-item">
+                            <div class="detalhes-item">
+                                <h5 class="nome-item">Sorvete</h5>
+                                <span class="preco-item">$3.99</span>
+                            </div>
+                        </div>
+                        <div class="controle-quantidade">
+                            <button class="botao-quantidade menos">-</button>
+                            <span class="quantidade-item">1</span>
+                            <button class="botao-quantidade mais">+</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="informacoes-item">
+                            <img src="view/imagens/Sorvetes/img-P/rsz_creme_caramelo.jpg" alt="Sorvete" class="imagem-item">
+                            <div class="detalhes-item">
+                                <h5 class="nome-item">Sorvete</h5>
+                                <span class="preco-item">$3.99</span>
+                            </div>
+                        </div>
+                        <div class="controle-quantidade">
+                            <button class="botao-quantidade menos">-</button>
+                            <span class="quantidade-item">1</span>
+                            <button class="botao-quantidade mais">+</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="informacoes-item">
+                            <img src="view/imagens/Sorvetes/img-P/rsz_creme_caramelo.jpg" alt="Sorvete" class="imagem-item">
+                            <div class="detalhes-item">
+                                <h5 class="nome-item">Sorvete</h5>
+                                <span class="preco-item">$3.99</span>
+                            </div>
+                        </div>
+                        <div class="controle-quantidade">
+                            <button class="botao-quantidade menos">-</button>
+                            <span class="quantidade-item">1</span>
+                            <button class="botao-quantidade mais">+</button>
+                        </div>
+                    </li>
+                    <!-- Outros itens da lista... -->
+                </ul>
+                <button class="botao-finalizar">Finalizar</button>
+            </div>
+        </div>
+    
+    
+    </header>
+
+    <div id="listaCompras" class="lista-compras">
+        <div class="cabecalho-carrinho">
+            <h3>Seu Carrinho</h3>
+            <a href="#" onclick="ListaCompras()">&times;</a>
+        </div>
+        <div class="conteudo-carrinho">
+            <ul>
+                <li>
+                    <div class="informacoes-item">
+                        <img src="view/imagens/Sorvetes/img-P/rsz_creme_caramelo.jpg" alt="Sorvete" class="imagem-item">
+                        <div class="detalhes-item">
+                            <h5 class="nome-item">Sorvete</h5>
+                            <span class="preco-item">$3.99</span>
+                        </div>
+                    </div>
+                    <div class="controle-quantidade">
+                        <button class="botao-quantidade menos">-</button>
+                        <span class="quantidade-item">1</span>
+                        <button class="botao-quantidade mais">+</button>
+                    </div>
+                </li>
+                <!-- Outros itens da lista... -->
+            </ul>
+            <button class="botao-finalizar">Finalizar</button>
+        </div>
+    </div>
+
+
+
+    <!-- Banner principal -->
+    <div class="banner">
+        <div class="guarda-banner">
+            <img src="view/imagens/gif_sorvete.gif" alt="leite flutuante">
+            <h3>Gelados Pop</h3>
+        </div>
+    </div>
+
+    <!-- Destaque de produtos -->
+    <div class="destaque">
+        <h3>Produtos em destaque</h3>
+    </div>
+
+    <!-- Fundo dos produtos -->
+    <div class="fundo_produtos">
+        <main>
+            <!-- &Cards de sorvetes -->
+            <article id="card1" class="card">
+                <div class="gd_img">
+                    <!-- Imagem do sorvete -->
+                    <img class="img_trat"
+                        onclick="abrirModal('view/imagens/Sorvetes/img-M/creme_caramelo-M.jpg', 'view/imagens/Sorvetes/img-P/rsz_creme_caramelo.jpg')"
+                        src="view/imagens/Sorvetes/img-P/rsz_creme_caramelo.jpg" alt="">
+                </div>
+                <!-- Ícone de zoom para visualizar a imagem -->
+                <a
+                    onclick="abrirModal('view/imagens/Sorvetes/img-M/creme_caramelo-M.jpg', 'view/imagens/Sorvetes/img-P/rsz_creme_caramelo.jpg')">
+                    <svg class="icon_zoom" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-zoom-in" viewBox="0 0 16 16">
+                        <!-- Ícone de zoom -->
+                        <path fill-rule="evenodd"
+                            d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                        <path
+                            d="M10.344 11.742c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1 6.538 6.538 0 0 1-1.398 1.4z" />
+                        <path fill-rule="evenodd"
+                            d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5z" />
+                    </svg>
+                </a>
+                <div class="container_palavras">
+                    <!-- Informações do sorvete -->
+                    <h2 class="sorvete-nome">Caramelo Crocante</h2>
+                    <h3 class="sorvete-price">R$35 <span class="sorvete-gramas"> 200g</span></h3>
+                    
+                </div>
+                <p class="texto-info">Prepare-se para uma explosão de sabor! Nosso sorvete cremoso de baunilha é generosamente coberto com uma deliciosa calda de caramelo e pedacinhos crocantes de granola com chocolate. A combinação perfeita entre o doce suave, o toque salgado do caramelo e a crocância irresistível. Ideal para quem ama contrastes e texturas em cada colherada!</p>
+                <!-- Botão para adicionar ao carrinho -->
+                <button class="btn_comprar" class="btn1"><a onclick="ModalComprarAbrir()">Comprar</a></button>
+                <!-- Modal para adicionar quantidade -->
+                <div id="popup1" class="overlay">
+                    <div class="popup">
+                        <div class="h2_close">
+                            <h2>Adicione a quantidade</h2>
+                            <a class="close" onclick="ModalComprarFechar()">&times;</a>
+                        </div>
+
+                        <input id="addSorvete" class="input_color" type="number" placeholder="Insira a quantidade">
+
+                        <div class="content">
+                            <button class="btn_add" data-nome="Creme de caramelo"
+                                onclick="Adicionar()">Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+             
+
+
+
+
+            
+
+
+
+
+
+
+        </main>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="final_pag">
+            <p>&copy; 2023 Gelados Pop. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <!-- !modal -->
+    <article class="popup_img1 overlay">
+        <div class="popup_img">
+            
+            <picture>
+                <div class="style_close_img">
+                    <a class="close_img" onclick="fecharModal()">&times;</a>
+                </div>
+                <!-- Imagens do sorvete (resoluções diferentes) -->
+                <source media="(min-width:350px)" id="imgM" srcset="">
+                <!-- <source media="(max-width: 350px)" id="imgP" srcset=""> -->
+                <img class="zoom_img" src="" id="imgG" alt="">
+            </picture>
+        </div>
+    </article>
+
+
+
+
+
+    <script>
+
+        var popup1 = document.getElementById('popup1');
+        /*abrir modal visualizar*/
+        let popup = document.querySelector('.popup');
+
+        var popup_img1 = document.querySelector('.popup_img1');
+
+
+
+
+
+
+        function abrirModal(imgM, imgG) {
+            // var pequena = document.getElementById('imgP');
+            var media = document.getElementById('imgM');
+            var grande = document.getElementById('imgG');
+            // pequena.srcset = imgP;
+            media.srcset = imgM;
+            grande.src = imgG;
+
+            popup_img1.style.display = 'block';
+        }
+
+        function fecharModal() {
+            popup_img1.style.display = 'none';
+        }
+
+
+        // Modal quantidade
+        function ModalComprarAbrir() {
+
+            popup1.style.display = 'flex';
+        }
+        function ModalComprarFechar() {
+            popup1.style.display = 'none';
+        }
+
+        // ...
+
+        function Adicionar(elementoPai) {
+            let quantidade = document.getElementById('addSorvete');
+            let pegarQtd = quantidade.value;
+            const botaoComprar = event.target; // ou passe o parâmetro adequado conforme o seu código
+            const nomeSorvete = botaoComprar.getAttribute('data-nome');
+
+
+
+            if (pegarQtd > 0) {
+                popup1.style.display = 'none';
+
+
+                // Fazer algo com ulCard aqui, como adicionar itens à lista
+            } else {
+                popup.classList.add('animarPopup');
+                removerAnimar(100);
+            }
+        }
+
+        function removerAnimar(esperar) {
+            setTimeout(() => {
+                popup.classList.remove('animarPopup');
+            }, esperar);
+        }
+
+        // ...
+
+
+
+
+        function ListaCompras() {
+            const cartList = document.querySelector(".lista-compras");
+            cartList.style.right = cartList.style.right === "0px" ? "-400px" : "0px";
+        }
+
+        // // Fechar a lista de compras ao clicar fora dela
+        // window.addEventListener("click", function(event) {
+        //     const cartList = document.getElementById("cartList");
+        //     if (!event.target.closest(".cart-list") && !event.target.closest(".icon_compra")) {
+        //         cartList.style.right = "-400px";
+        //     }
+        // });
+
+
+
+        /*menu esquerdo mobile */
+        var aberto = false; // Declare a variável fora da função para que possa ser acessada em toda a função
+
+        function menuEsquerdo() {
+            var menuEsquerdo = document.querySelector('nav');
+
+            // Verifica se a largura da tela é menor ou igual a 600 pixels (pode ajustar esse valor conforme necessário)
+            if (window.innerWidth <= 600) {
+                if (menuEsquerdo.style.transform === 'translateX(-100%)') {
+                    // Se o menu estiver fechado, abra-o
+                    menuEsquerdo.style.transform = 'translateX(0%)';
+                    aberto = true;
+                } else {
+                    // Se o menu estiver aberto, feche-o
+                    menuEsquerdo.style.transform = 'translateX(-100%)';
+                    aberto = false;
+                }
+            }
+        }
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

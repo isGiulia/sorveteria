@@ -1,0 +1,318 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    /* background-color: rgb(249, 27, 27); */
+    height: auto;
+    color: #fff;
+}
+
+.section-container-forma {
+    position: relative;
+    width: 100%;
+    /* background-color: aqua; */
+    height: 50%;
+}
+
+.container_forma {
+    width: 100%;
+}
+
+.navegar-container {
+  
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    z-index: 20;
+}
+
+#navegar-pc{
+    grid-template-columns: 60px 1fr;
+    display: grid;
+    width: 100%;
+    height: 20%;
+    /* background-color: black; */
+ 
+}
+#div-nav {
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(218, 222, 111); */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#logo-header {
+    width: 100%;
+    height: auto;
+}
+
+.itensMenu1 {
+    display: flex;
+    justify-content:flex-end;
+    width: auto;
+    height: auto;
+    /* background-color: blueviolet; */
+    position: relative;
+    
+}
+.itensMenu1 li {
+    display: flex;
+    align-items: center;
+   padding-right: 5%;
+}
+
+.itensMenu1 li a {
+    color: var(--cor_titulos);
+
+
+    font-size: 1.9vw;
+   
+    text-decoration: none;
+    align-self: center;
+}
+.itensMenu1 li a, .navegar-ul-mobile li a{
+    font-family: var(--font-sriracha);
+}
+
+
+#subUl,
+.itensMenu1 {
+    list-style: none;
+}
+
+#subUl {
+    background-color:var(--cor_branca);
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -100;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   
+}
+
+.itensMenu1 li:hover #subUl {
+    display: inline;
+    /* Tornar visível ao passar o mouse no item "Produtos" */
+}
+
+
+#subUl li {
+    padding: 10px;
+}
+
+.forma {
+    width: 40px;
+    height: 75px;
+    background-color: var(--cor_branca);
+    border-bottom-left-radius: 160px;
+    border-bottom-right-radius: 160px;
+    box-shadow: 4px 1px 5px rgb(151, 0, 165);
+    display: table-cell;
+    z-index: 1;
+}
+/** mobile **/
+.navbar-header {
+    display: none;
+   
+   height: 100%;
+    background-color: rgb(89, 255, 0);
+    align-items: center;
+    
+}
+.navbar-header
+{
+    width: 40%;
+    
+    background-color: antiquewhite;
+}
+#navegar-mobile{
+    position: relative;
+  
+}
+.navegar-ul-mobile{
+    width: 60vw;
+    padding: 2%;
+    background-color:var(--cor_branca);
+    list-style: none;
+    position: absolute;
+ 
+    transform: translateX(-101%);
+    transition: 0.5s ease-in-out;
+    z-index: 0;
+  
+  
+}
+.navegar-ul-mobile li{
+    border-bottom: solid 2px var(--cor_titulos);
+    margin: 2%;
+    padding: 2%;
+    padding-top: 5%;
+}
+
+  
+
+.navegar-ul-mobile li a{
+   text-decoration: none;
+}
+
+/**LISTA DE COMPRAS*/
+/* Estilizando a lista de compras com um design mais bonito */
+.lista-compras {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    background-color: #ffffff; 
+   display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    z-index: 1000;
+    color:var(--cor_titulos); /* Cor do texto */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 8px;
+}
+
+/* Estilizando o cabeçalho do carrinho */
+.cabecalho-carrinho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--cor_titulos); /* Linha branca separando o cabeçalho */
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.cabecalho-carrinho h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.cabecalho-carrinho a {
+    text-decoration: none;
+    color: var(--cor_titulos); /* Cor do texto */
+    font-size: 30px;
+}
+
+/* Estilizando a lista de itens no carrinho */
+.conteudo-carrinho ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.conteudo-carrinho{
+    max-height: 80vh; /* Altura máxima de 80% da altura da viewport */
+    overflow-y: auto; 
+}
+.conteudo-carrinho li {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--cor_titulos); 
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+/* Estilizando as informações do item */
+.informacoes-item {
+    display: flex;
+    align-items: center;
+}
+
+.imagem-item {
+    max-width: 70px;
+    max-height: 70px;
+    margin-right: 15px;
+    border-radius: 8px;
+}
+
+.detalhes-item {
+    flex-grow: 1;
+}
+
+.nome-item {
+    margin: 0;
+    font-size: 16px;
+    color: rgb(62, 62, 62); /* Cor do texto */
+}
+
+.preco-item {
+    font-size: 14px;
+    color: rgb(62, 62, 62); /* Cor do texto mais claro */
+}
+
+/* Estilizando os botões de controle de quantidade */
+.controle-quantidade {
+    display: flex;
+    align-items: center;
+}
+
+.botao-quantidade {
+    background-color: #3498db; /* Cor azul, mantida para os botões */
+    color: #fff; /* Cor do texto */
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    border-radius: 9px;
+}
+
+.botao-quantidade.menos {
+    background-color: #ff1a01; /* Cor vermelha, mantida para o botão de menos */
+}
+
+.botao-quantidade.mais {
+    background-color: #3dc413; /* Cor verde, mantida para o botão de mais */
+}
+
+.quantidade-item {
+    font-size: 16px;
+    margin: 0 10px;
+    color: rgb(62, 62, 62); /* Cor do texto */
+}
+
+/* Estilizando o botão de finalizar */
+.botao-finalizar {
+    background-color: var(--cor_titulos); /* Cor verde, mantida para o botão de finalizar */
+    color: #fff; /* Cor do texto */
+    border: none;
+    padding: 12px;
+    width: 100%;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Adicionando estilo para o hover no botão de finalizar */
+.botao-finalizar:hover {
+    background-color: #219f52; /* Cor mais escura para o hover */
+}
+
+/*mobile*/
+/* Estilos para tornar responsivo */
+@media (max-width: 600px) {
+    body{
+        background-color: aqua;
+    }
+    .itensMenu1 li {
+        display: none;
+    }
+
+    .itensMenu1 li:last-child {
+        display: flex;
+    }
+
+    .navbar-header{
+        display: flex;
+    }
+}

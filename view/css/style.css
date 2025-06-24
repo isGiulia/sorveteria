@@ -1,0 +1,67 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  cursor: url(https://cur.cursors-4u.net/food/foo-1/foo63.cur), auto !important;
+
+}
+
+:root {
+  --cor_principal: #ffa8d0;
+  --cor_titulos: #EF2F7F;
+  --cor_branca: #ffffff;
+  --corazul: rgba(9, 189, 221, 0.897);
+  --gradienteLetras1: #ff00bf;
+  --gradienteLetras2: #9198e5;
+
+  --font-alata: 'Alata', sans-serif;
+  --font-bad-script: 'Bad Script', cursive;
+  --font-dancing-script: 'Dancing Script', cursive;
+  --font-sriracha: 'Sriracha', cursive;
+}
+
+/*>>>>>>>>FINAL PAGINA<<<<<<<<<<<<<<<*/
+footer {
+  width: 100%;
+  background-color: var(--cor_titulos);
+  color: var(--cor_branca);
+  text-align: center;
+  font-family: var(--font-alata);
+  font-size: 1.2em;
+}
+
+ 
+  
+
+
+/* Estilos para celular */
+@media (max-width: 767px) {
+  /* Estilos para telas com largura máxima de 767px (celulares) */
+
+  .menu ul li a {
+    font-size: 0.7rem;
+  }
+
+  .destaque h3 {
+    font-size: 9vw;
+    /* Tamanho da fonte adaptável para celular usando vw */
+  }
+
+  .guarda-banner h3 {
+    font-size: 10.5vw;
+  }
+
+  .h2_close h2 {
+    font-size: 6.5vw;
+  }
+
+  .close {
+    font-size: 12 .5vw;
+  }
+
+}
+
+
+
+
+
+

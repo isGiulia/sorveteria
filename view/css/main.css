@@ -1,0 +1,537 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+
+
+/* BANNER */
+.banner {
+    width: 100%;
+    background-color: var(--cor_principal);
+}
+
+.guarda-banner {
+    padding-top: 40px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.guarda-banner img {
+    width: 50%;
+}
+
+.guarda-banner h3 {
+    z-index: 0;
+    position: absolute;
+    font-size: 7.5vw;
+    font-family: var(--font-dancing-script);
+    background: linear-gradient(90deg, var(--gradienteLetras1), var(--gradienteLetras2));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>PRINCIPAL<<<<<<<<<<<*/
+
+.destaque {
+    width: 100%;
+    text-align: center;
+
+}
+
+.destaque h3 {
+    padding-top: 5%;
+    font-size: 5vw;
+    text-align: center;
+    font-family: var(--font-dancing-script);
+    background: linear-gradient(90deg, var(--gradienteLetras1), var(--gradienteLetras2));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+/*>>>>>>>>>>>>>>>>>main<<<<<<<<<<*/
+.fundo_produtos {
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+main {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+    background-color: var(--gradienteLetras2);
+
+
+    background: linear-gradient(90deg, #e664e0d0, #25b9c4c0);
+    border-radius: 60px;
+
+
+
+
+
+}
+
+#popup1 {
+    display: none;
+}
+
+.card {
+    width: 270px;
+    height: 390px;
+    background-color: rgb(211, 55, 141);
+    margin: 11px;
+    padding: 0px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+
+    box-shadow: 0px 3px 5px 0px rgb(63, 242, 255);
+
+
+
+}
+
+.gd_img {
+    width: 100%;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+.icon_zoom {
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    border-radius: 100px;
+    display: block;
+    color: #ffffff;
+    cursor: url(https://cur.cursors-4u.net/food/foo-1/foo64.cur), auto !important;
+
+}
+
+/*TRATAMENTO IMAGEM*/
+.img_trat {
+    width: 95%;
+    height: 160px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    margin-top: 10px;
+    position: relative;
+
+}
+
+
+.container_palavras {
+    width: 90%;
+    color: var(--cor_branca);
+}
+
+.nome_sorvete,
+.info_sorvete {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sorvete-nome {
+    font-family: var(--font-dancing-script);
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.sorvete-price {
+    font-size: 1.5em;
+    font-family: var(--font-alata);
+    text-align: center;
+
+}
+
+.sorvete-gramas{
+    font-size: 13px;
+    font-family: var(--font-alata);
+}
+
+.texto-info {
+    width: 220px;
+    height: 50px;
+    color: var(--cor_branca);
+    overflow-y: scroll;
+    background-color: #7593e770;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+.btn_comprar {
+    
+    width: 40%;
+    height: 10%;
+    border-radius: 30px;
+    background-color: #F8579A;
+    padding: 1% 2%;
+    border-style: none;
+    box-shadow: 5px 5px 10px rgb(151, 0, 165);
+    color: var(--cor_branca);
+    font-family: var(--font-alata);
+    font-size: 100%;
+    text-align: center;
+    position: relative;
+    margin-top: 1%;
+    cursor: url(https://cur.cursors-4u.net/food/foo-1/foo64.cur), auto !important;
+
+
+
+
+}
+
+.fundo_produtos main .btn_comprar:active {
+    background-color: #d401a0;
+    color: #ffeaf4;
+    box-shadow: 5px 5px 10px rgb(243, 112, 255);
+    cursor: url(https://cur.cursors-4u.net/food/foo-1/foo64.cur), auto !important;
+}
+
+.card .btn_comprar a {
+    text-decoration: none;
+    color: var(--cor_branca);
+    cursor: url(https://cur.cursors-4u.net/food/foo-1/foo64.cur), auto !important;
+}
+
+.card .btn_comprar a {
+    text-decoration: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.795);
+    transition: opacity 500ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.popup_img1 {
+    display: none;
+    width: 100%;
+    height: 100%;
+ 
+}
+
+.popup_img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+picture {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.zoom_img {
+    width: 90%;
+    margin: auto;
+    object-fit: cover;
+    transition: all 5s ease-in-out;
+}
+
+.popup_img {
+    position: relative;
+}
+
+/* Manter a imagem na parte superior */
+.style_close_img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.close_img {
+    color: yellow;
+    font-size: 8vw;
+    font-weight: bolder;
+    z-index: 20;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    transition: all 200ms;
+}
+
+/*Popup quantidade*/
+.popup {
+    background-color: #d401a0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 30px 10px #02e1ff;
+    width: 400px;
+
+
+}
+
+.animarPopup {
+    animation: shake 0.5s ease-in-out infinite;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-5px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(5px);
+    }
+}
+
+.h2_close {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.h2_close h2 {
+    font-family: var(--font-bad-script);
+    color: var(--cor_branca);
+    font-size: 2.9vw;
+}
+
+.close {
+    color: rgb(238, 255, 0);
+    text-decoration: none;
+    font-size: 5.5vw;
+    padding: 10px;
+}
+
+/* Estilos para o campo de entrada e botão */
+.input_color {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn_add {
+    background-color: var(--cor_principal);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.input_color::-webkit-input-placeholder {
+    color: var(--cor_branca);
+    font-family: Arial;
+
+}
+
+
+
+/* Adiciona a barra arrastável */
+::-webkit-scrollbar-thumb {
+    background-color: #98f3ffa1;
+    width: 5px;
+    height: 5px;
+    border-radius: 30px;
+
+}
+
+@media (max-width: 600px) 
+{
+    .guarda-banner img {
+        width: 80%;
+    }
+
+    .guarda-banner h3 {
+        font-size: 15.5vw;
+    }
+
+    .destaque h3 {
+        font-size: 10vw;
+    }
+
+    
+.h2_close h2 {
+    font-size: 6.5vw;
+}
+
+.close {
+    font-size: 15vw;
+}
+
+.zoom_img {
+    width: 100%;
+}
+}
+
+@media (min-width: 601px) and (max-width:(1000px))
+{
+    .h2_close h2 {
+        font-size:20vw;
+    }
+    
+    .close {
+        font-size: 15vw;
+    }
+    .popup {
+      
+    }
+    
+}
+/* Se a largura da tela for maior que 2000px*/
+@media (min-width: 2001px) {
+    .guarda-banner img {
+        width: 60%;
+    }
+    .guarda-banner h3 {
+        font-size: 12.5vw;
+    }
+   .h2_close h2 {
+    font-size: 6vw;
+
+    }
+    .popup {
+      width: 60%;
+    }
+    .close{
+        font-size: 10.5vw;
+    }
+    .input_color {
+        width: 90%;
+        padding: 5%;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 50px;
+    }
+    
+    .btn_add {
+       font-size: 90%;
+        padding: 30px 80px;
+        font-size: 50px;
+        
+    }
+
+    .card {
+        width: 40%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+       
+    }
+    .gd_img{
+        height: 20vw;
+        display: flex;
+        align-items: flex-start;
+    }
+   
+    .img_trat {
+        width: 95%;
+        height: 90%;
+    
+    }
+   
+    .container_palavras{
+        height: auto;
+    }
+    .sorvete-nome {
+        font-size: 5vw;
+       
+    }
+    
+    .sorvete-price {
+        font-size: 2.5vw;
+        
+    
+    }
+    
+    .sorvete-gramas{
+        font-size: 1.5vw;
+       
+    }
+
+    .texto-info  {
+        margin-top: 1%;
+        width: 80%;
+        height: 30%;
+       font-size: 2.5vw;
+        overflow-y: scroll;
+       
+    }
+    .btn_comprar{
+        font-size: 2.0em;
+        display: inline;
+        margin-bottom: 3%;
+        margin-top: 3%;
+        border-radius: 70px;
+        
+    }
+}

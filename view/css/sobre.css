@@ -1,0 +1,37 @@
+/* Estilos para tornar a página responsiva */
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  
+  
+  }
+
+.container{
+    width: 100%;
+    background-color: aqua;
+    height: auto;
+   display: flex;
+    flex-direction: column;
+}
+
+#container-h1{
+    width: 100%;
+    height: auto;
+    background-color: antiquewhite;
+}
+
+/*imagens */
+
+#section-imgs{
+
+
+}
+.foto_sobre{
+    width: 10px;
+    height: 10px;
+}
+/* Estilos responsivos para as imagens e o texto */
+@media screen and (max-width: 768px) {
+    
+}
