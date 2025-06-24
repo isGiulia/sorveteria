@@ -7,7 +7,7 @@
 
 ## Demonstração em Vídeo
 
-Veja a interface em funcionamento e como ela se adapta a diferentes dispositivos:
+Veja a interface em funcionamento:
 
 [![Ver gif](/view/imagens/redme/gifs/TvZxZqr.gif)
 
